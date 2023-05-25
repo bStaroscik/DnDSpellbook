@@ -48,7 +48,7 @@ namespace DnDSpellbook
                                  SpellId = Convert.ToInt16(node.Element("ID").Value),
                                  SpellLevel = Convert.ToInt16(node.Element("Level").Value),
                                  SpellClass = node.Element("Class").Value,
-                                 SpellName = node.Element("SpellName").Value,
+                                 SpellName = node.Element("Name").Value,
                                  Reversible = node.Element("Reversible").Value,
                                  SpellSchool = node.Element("School_Sphere").Value,
                                  Components = node.Element("Components").Value,
@@ -57,7 +57,7 @@ namespace DnDSpellbook
                                  SpellSave = node.Element("Save").Value,
                                  CastingTime = node.Element("CastingTime").Value,
                                  Duration = node.Element("Duration").Value,
-                                 Book = node.Element("Book").Value,
+                                 Book = node.Element("Source").Value,
                                  Description = node.Element("Description").Value
                               })
                              .ToList();
