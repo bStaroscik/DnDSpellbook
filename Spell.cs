@@ -32,9 +32,11 @@ namespace DnDSpellbook
 
         public string Description { get; set; }
 
+        public string Reversible { get; set; }
+
         public Spell() { }
 
-        public Spell(int theSpellId, string theSpellName, int theSpellLevel, string theComponents, string theSpellRange, string theAreadOfEffect, string theSpellSave, string theCastingTime, string theDuration, string theSpellClass, string theSpellSchool, string theBook, string theDescription)
+        public Spell(int theSpellId, string theSpellName, int theSpellLevel, string theComponents, string theSpellRange, string theAreadOfEffect, string theSpellSave, string theCastingTime, string theDuration, string theSpellClass, string theSpellSchool, string theBook, string theDescription, string theReversible)
         {
             SpellId = theSpellId;
             SpellName = theSpellName;
@@ -49,6 +51,11 @@ namespace DnDSpellbook
             SpellSchool = theSpellSchool;
             Book = theBook;
             Description = theDescription;
+            Reversible = theReversible;
+        }
+
+        public Spell(object s)
+        {
         }
 
         public override string ToString()
