@@ -33,7 +33,9 @@ namespace DnDSpellbook
 
         //}
 
-        private static string xmlfilename = "C:\\Users\\User\\source\\repos\\DnDSpellbook\\Spells.xml";
+        //private static string xmlfilename = "C:\\Users\\User\\source\\repos\\DnDSpellbook\\Spells.xml";
+
+        private static string xmlfilename = Path.GetFullPath("Spells.xml");
         internal static List<Spell> GetSpellsXML()
         {
             List<Spell> allSpells = new List<Spell>();
