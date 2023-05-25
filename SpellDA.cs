@@ -48,7 +48,7 @@ namespace DnDSpellbook
                                  SpellId = Convert.ToInt16(node.Element("ID").Value),
                                  SpellLevel = Convert.ToInt16(node.Element("Level").Value),
                                  SpellClass = node.Element("Class").Value,
-                                 SpellName = node.Element("Name").Value,
+                                 SpellName = node.Element("SpellName").Value,
                                  Reversible = node.Element("Reversible").Value,
                                  SpellSchool = node.Element("School_Sphere").Value,
                                  Components = node.Element("Components").Value,
