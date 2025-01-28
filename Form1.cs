@@ -21,11 +21,6 @@ namespace DnDSpellbook
         List<Spell> currentSpells = new List<Spell>();
         Spell currentSpell = null;
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
             //Load up the Search boxes
@@ -166,11 +161,6 @@ namespace DnDSpellbook
             //searchSpells = searchSpells.FindAll(x => x.SpellLevel.Equals(searchLevel));
 
             ShowSpells(searchSpells);
-        }
-
-        private void label16_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -29,365 +29,380 @@ namespace DnDSpellbook
         /// </summary>
         private void InitializeComponent()
         {
-            this.AOEtxt = new System.Windows.Forms.TextBox();
-            this.SpellRangetxt = new System.Windows.Forms.TextBox();
-            this.SpellLeveltxt = new System.Windows.Forms.TextBox();
-            this.Componentstxt = new System.Windows.Forms.TextBox();
-            this.Spelllst = new System.Windows.Forms.ListBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.NameSearchcbo = new System.Windows.Forms.TextBox();
-            this.SchoolSearchcbo = new System.Windows.Forms.ComboBox();
-            this.ClassSearchcbo = new System.Windows.Forms.ComboBox();
-            this.LevelSearchcbo = new System.Windows.Forms.ComboBox();
-            this.SpellNametxt = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.SpellSavetxt = new System.Windows.Forms.TextBox();
-            this.SpellCastTimetxt = new System.Windows.Forms.TextBox();
-            this.SpellDurationtxt = new System.Windows.Forms.TextBox();
-            this.Descriptiontxt = new System.Windows.Forms.TextBox();
-            this.Class = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.Classtxt = new System.Windows.Forms.TextBox();
-            this.Schooltxt = new System.Windows.Forms.TextBox();
-            this.Booktxt = new System.Windows.Forms.TextBox();
-            this.SuspendLayout();
+            AOEtxt = new System.Windows.Forms.TextBox();
+            SpellRangetxt = new System.Windows.Forms.TextBox();
+            SpellLeveltxt = new System.Windows.Forms.TextBox();
+            Componentstxt = new System.Windows.Forms.TextBox();
+            Spelllst = new System.Windows.Forms.ListBox();
+            label1 = new System.Windows.Forms.Label();
+            label2 = new System.Windows.Forms.Label();
+            label3 = new System.Windows.Forms.Label();
+            label4 = new System.Windows.Forms.Label();
+            label5 = new System.Windows.Forms.Label();
+            label6 = new System.Windows.Forms.Label();
+            label7 = new System.Windows.Forms.Label();
+            label8 = new System.Windows.Forms.Label();
+            NameSearchcbo = new System.Windows.Forms.TextBox();
+            SchoolSearchcbo = new System.Windows.Forms.ComboBox();
+            ClassSearchcbo = new System.Windows.Forms.ComboBox();
+            LevelSearchcbo = new System.Windows.Forms.ComboBox();
+            SpellNametxt = new System.Windows.Forms.TextBox();
+            label9 = new System.Windows.Forms.Label();
+            label10 = new System.Windows.Forms.Label();
+            label11 = new System.Windows.Forms.Label();
+            label12 = new System.Windows.Forms.Label();
+            label13 = new System.Windows.Forms.Label();
+            SpellSavetxt = new System.Windows.Forms.TextBox();
+            SpellCastTimetxt = new System.Windows.Forms.TextBox();
+            SpellDurationtxt = new System.Windows.Forms.TextBox();
+            Descriptiontxt = new System.Windows.Forms.TextBox();
+            Class = new System.Windows.Forms.Label();
+            label15 = new System.Windows.Forms.Label();
+            label16 = new System.Windows.Forms.Label();
+            Classtxt = new System.Windows.Forms.TextBox();
+            Schooltxt = new System.Windows.Forms.TextBox();
+            Booktxt = new System.Windows.Forms.TextBox();
+            SuspendLayout();
             // 
             // AOEtxt
             // 
-            this.AOEtxt.Location = new System.Drawing.Point(608, 207);
-            this.AOEtxt.Name = "AOEtxt";
-            this.AOEtxt.Size = new System.Drawing.Size(125, 27);
-            this.AOEtxt.TabIndex = 0;
+            AOEtxt.Location = new System.Drawing.Point(518, 204);
+            AOEtxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            AOEtxt.Name = "AOEtxt";
+            AOEtxt.Size = new System.Drawing.Size(110, 23);
+            AOEtxt.TabIndex = 0;
             // 
             // SpellRangetxt
             // 
-            this.SpellRangetxt.Location = new System.Drawing.Point(437, 207);
-            this.SpellRangetxt.Name = "SpellRangetxt";
-            this.SpellRangetxt.Size = new System.Drawing.Size(125, 27);
-            this.SpellRangetxt.TabIndex = 1;
+            SpellRangetxt.Location = new System.Drawing.Point(368, 255);
+            SpellRangetxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            SpellRangetxt.Name = "SpellRangetxt";
+            SpellRangetxt.Size = new System.Drawing.Size(110, 23);
+            SpellRangetxt.TabIndex = 1;
             // 
             // SpellLeveltxt
             // 
-            this.SpellLeveltxt.Location = new System.Drawing.Point(437, 154);
-            this.SpellLeveltxt.Name = "SpellLeveltxt";
-            this.SpellLeveltxt.Size = new System.Drawing.Size(125, 27);
-            this.SpellLeveltxt.TabIndex = 2;
+            SpellLeveltxt.Location = new System.Drawing.Point(368, 152);
+            SpellLeveltxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            SpellLeveltxt.Name = "SpellLeveltxt";
+            SpellLeveltxt.Size = new System.Drawing.Size(110, 23);
+            SpellLeveltxt.TabIndex = 2;
             // 
             // Componentstxt
             // 
-            this.Componentstxt.Location = new System.Drawing.Point(608, 154);
-            this.Componentstxt.Name = "Componentstxt";
-            this.Componentstxt.Size = new System.Drawing.Size(125, 27);
-            this.Componentstxt.TabIndex = 3;
+            Componentstxt.Location = new System.Drawing.Point(518, 152);
+            Componentstxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            Componentstxt.Name = "Componentstxt";
+            Componentstxt.Size = new System.Drawing.Size(110, 23);
+            Componentstxt.TabIndex = 3;
             // 
             // Spelllst
             // 
-            this.Spelllst.FormattingEnabled = true;
-            this.Spelllst.ItemHeight = 20;
-            this.Spelllst.Location = new System.Drawing.Point(56, 66);
-            this.Spelllst.Name = "Spelllst";
-            this.Spelllst.Size = new System.Drawing.Size(303, 404);
-            this.Spelllst.TabIndex = 4;
-            this.Spelllst.SelectedIndexChanged += new System.EventHandler(this.Spelllst_SelectedIndexChanged);
+            Spelllst.FormattingEnabled = true;
+            Spelllst.ItemHeight = 15;
+            Spelllst.Location = new System.Drawing.Point(49, 85);
+            Spelllst.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            Spelllst.Name = "Spelllst";
+            Spelllst.Size = new System.Drawing.Size(266, 649);
+            Spelllst.TabIndex = 4;
+            Spelllst.SelectedIndexChanged += Spelllst_SelectedIndexChanged;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(608, 131);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 20);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Components";
+            label1.AutoSize = true;
+            label1.Location = new System.Drawing.Point(520, 135);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(76, 15);
+            label1.TabIndex = 5;
+            label1.Text = "Components";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(432, 131);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 20);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Level";
+            label2.AutoSize = true;
+            label2.Location = new System.Drawing.Point(368, 135);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(34, 15);
+            label2.TabIndex = 6;
+            label2.Text = "Level";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(437, 184);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 20);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Range";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            label3.AutoSize = true;
+            label3.Location = new System.Drawing.Point(368, 238);
+            label3.Name = "label3";
+            label3.Size = new System.Drawing.Size(40, 15);
+            label3.TabIndex = 7;
+            label3.Text = "Range";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(608, 184);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(141, 20);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Area of Effect (AoE)";
+            label4.AutoSize = true;
+            label4.Location = new System.Drawing.Point(518, 187);
+            label4.Name = "label4";
+            label4.Size = new System.Drawing.Size(110, 15);
+            label4.TabIndex = 8;
+            label4.Text = "Area of Effect (AoE)";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(56, 9);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(86, 20);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Spell Name";
+            label5.AutoSize = true;
+            label5.Location = new System.Drawing.Point(49, 7);
+            label5.Name = "label5";
+            label5.Size = new System.Drawing.Size(67, 15);
+            label5.TabIndex = 9;
+            label5.Text = "Spell Name";
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(226, 9);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(54, 20);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "School";
+            label6.AutoSize = true;
+            label6.Location = new System.Drawing.Point(198, 7);
+            label6.Name = "label6";
+            label6.Size = new System.Drawing.Size(43, 15);
+            label6.TabIndex = 10;
+            label6.Text = "School";
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(420, 9);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(42, 20);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "Class";
+            label7.AutoSize = true;
+            label7.Location = new System.Drawing.Point(368, 7);
+            label7.Name = "label7";
+            label7.Size = new System.Drawing.Size(34, 15);
+            label7.TabIndex = 11;
+            label7.Text = "Class";
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(608, 9);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(43, 20);
-            this.label8.TabIndex = 12;
-            this.label8.Text = "Level";
+            label8.AutoSize = true;
+            label8.Location = new System.Drawing.Point(532, 7);
+            label8.Name = "label8";
+            label8.Size = new System.Drawing.Size(34, 15);
+            label8.TabIndex = 12;
+            label8.Text = "Level";
             // 
             // NameSearchcbo
             // 
-            this.NameSearchcbo.Location = new System.Drawing.Point(56, 32);
-            this.NameSearchcbo.Name = "NameSearchcbo";
-            this.NameSearchcbo.Size = new System.Drawing.Size(125, 27);
-            this.NameSearchcbo.TabIndex = 13;
-            this.NameSearchcbo.TextChanged += new System.EventHandler(this.Search);
+            NameSearchcbo.Location = new System.Drawing.Point(49, 24);
+            NameSearchcbo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            NameSearchcbo.Name = "NameSearchcbo";
+            NameSearchcbo.Size = new System.Drawing.Size(110, 23);
+            NameSearchcbo.TabIndex = 13;
+            NameSearchcbo.TextChanged += Search;
             // 
             // SchoolSearchcbo
             // 
-            this.SchoolSearchcbo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.SchoolSearchcbo.FormattingEnabled = true;
-            this.SchoolSearchcbo.Location = new System.Drawing.Point(226, 32);
-            this.SchoolSearchcbo.Name = "SchoolSearchcbo";
-            this.SchoolSearchcbo.Size = new System.Drawing.Size(151, 28);
-            this.SchoolSearchcbo.TabIndex = 14;
-            this.SchoolSearchcbo.SelectedValueChanged += new System.EventHandler(this.Search);
+            SchoolSearchcbo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            SchoolSearchcbo.FormattingEnabled = true;
+            SchoolSearchcbo.Location = new System.Drawing.Point(198, 24);
+            SchoolSearchcbo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            SchoolSearchcbo.Name = "SchoolSearchcbo";
+            SchoolSearchcbo.Size = new System.Drawing.Size(133, 23);
+            SchoolSearchcbo.TabIndex = 14;
+            SchoolSearchcbo.SelectedValueChanged += Search;
             // 
             // ClassSearchcbo
             // 
-            this.ClassSearchcbo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ClassSearchcbo.FormattingEnabled = true;
-            this.ClassSearchcbo.Location = new System.Drawing.Point(420, 32);
-            this.ClassSearchcbo.Name = "ClassSearchcbo";
-            this.ClassSearchcbo.Size = new System.Drawing.Size(151, 28);
-            this.ClassSearchcbo.TabIndex = 15;
-            this.ClassSearchcbo.SelectedValueChanged += new System.EventHandler(this.Search);
+            ClassSearchcbo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            ClassSearchcbo.FormattingEnabled = true;
+            ClassSearchcbo.Location = new System.Drawing.Point(368, 24);
+            ClassSearchcbo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            ClassSearchcbo.Name = "ClassSearchcbo";
+            ClassSearchcbo.Size = new System.Drawing.Size(133, 23);
+            ClassSearchcbo.TabIndex = 15;
+            ClassSearchcbo.SelectedValueChanged += Search;
             // 
             // LevelSearchcbo
             // 
-            this.LevelSearchcbo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.LevelSearchcbo.FormattingEnabled = true;
-            this.LevelSearchcbo.Location = new System.Drawing.Point(608, 32);
-            this.LevelSearchcbo.Name = "LevelSearchcbo";
-            this.LevelSearchcbo.Size = new System.Drawing.Size(72, 28);
-            this.LevelSearchcbo.TabIndex = 16;
-            this.LevelSearchcbo.SelectedValueChanged += new System.EventHandler(this.Search);
+            LevelSearchcbo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            LevelSearchcbo.FormattingEnabled = true;
+            LevelSearchcbo.Location = new System.Drawing.Point(532, 24);
+            LevelSearchcbo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            LevelSearchcbo.Name = "LevelSearchcbo";
+            LevelSearchcbo.Size = new System.Drawing.Size(64, 23);
+            LevelSearchcbo.TabIndex = 16;
+            LevelSearchcbo.SelectedValueChanged += Search;
             // 
             // SpellNametxt
             // 
-            this.SpellNametxt.Location = new System.Drawing.Point(476, 89);
-            this.SpellNametxt.Name = "SpellNametxt";
-            this.SpellNametxt.Size = new System.Drawing.Size(227, 27);
-            this.SpellNametxt.TabIndex = 17;
+            SpellNametxt.Location = new System.Drawing.Point(368, 99);
+            SpellNametxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            SpellNametxt.Name = "SpellNametxt";
+            SpellNametxt.Size = new System.Drawing.Size(199, 23);
+            SpellNametxt.TabIndex = 17;
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(476, 66);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(86, 20);
-            this.label9.TabIndex = 18;
-            this.label9.Text = "Spell Name";
+            label9.AutoSize = true;
+            label9.Location = new System.Drawing.Point(368, 82);
+            label9.Name = "label9";
+            label9.Size = new System.Drawing.Size(67, 15);
+            label9.TabIndex = 18;
+            label9.Text = "Spell Name";
             // 
             // label10
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(437, 237);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(40, 20);
-            this.label10.TabIndex = 19;
-            this.label10.Text = "Save";
+            label10.AutoSize = true;
+            label10.Location = new System.Drawing.Point(368, 301);
+            label10.Name = "label10";
+            label10.Size = new System.Drawing.Size(31, 15);
+            label10.TabIndex = 19;
+            label10.Text = "Save";
             // 
             // label11
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(606, 237);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(95, 20);
-            this.label11.TabIndex = 20;
-            this.label11.Text = "Casting Time";
+            label11.AutoSize = true;
+            label11.Location = new System.Drawing.Point(518, 238);
+            label11.Name = "label11";
+            label11.Size = new System.Drawing.Size(76, 15);
+            label11.TabIndex = 20;
+            label11.Text = "Casting Time";
             // 
             // label12
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(437, 290);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(67, 20);
-            this.label12.TabIndex = 21;
-            this.label12.Text = "Duration";
+            label12.AutoSize = true;
+            label12.Location = new System.Drawing.Point(368, 364);
+            label12.Name = "label12";
+            label12.Size = new System.Drawing.Size(53, 15);
+            label12.TabIndex = 21;
+            label12.Text = "Duration";
             // 
             // label13
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(437, 396);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(85, 20);
-            this.label13.TabIndex = 22;
-            this.label13.Text = "Description";
+            label13.AutoSize = true;
+            label13.Location = new System.Drawing.Point(368, 439);
+            label13.Name = "label13";
+            label13.Size = new System.Drawing.Size(67, 15);
+            label13.TabIndex = 22;
+            label13.Text = "Description";
             // 
             // SpellSavetxt
             // 
-            this.SpellSavetxt.Location = new System.Drawing.Point(437, 260);
-            this.SpellSavetxt.Name = "SpellSavetxt";
-            this.SpellSavetxt.Size = new System.Drawing.Size(125, 27);
-            this.SpellSavetxt.TabIndex = 23;
+            SpellSavetxt.Location = new System.Drawing.Point(368, 318);
+            SpellSavetxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            SpellSavetxt.Name = "SpellSavetxt";
+            SpellSavetxt.Size = new System.Drawing.Size(110, 23);
+            SpellSavetxt.TabIndex = 23;
             // 
             // SpellCastTimetxt
             // 
-            this.SpellCastTimetxt.Location = new System.Drawing.Point(608, 260);
-            this.SpellCastTimetxt.Name = "SpellCastTimetxt";
-            this.SpellCastTimetxt.Size = new System.Drawing.Size(125, 27);
-            this.SpellCastTimetxt.TabIndex = 24;
+            SpellCastTimetxt.Location = new System.Drawing.Point(518, 255);
+            SpellCastTimetxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            SpellCastTimetxt.Name = "SpellCastTimetxt";
+            SpellCastTimetxt.Size = new System.Drawing.Size(110, 23);
+            SpellCastTimetxt.TabIndex = 24;
             // 
             // SpellDurationtxt
             // 
-            this.SpellDurationtxt.Location = new System.Drawing.Point(437, 313);
-            this.SpellDurationtxt.Name = "SpellDurationtxt";
-            this.SpellDurationtxt.Size = new System.Drawing.Size(125, 27);
-            this.SpellDurationtxt.TabIndex = 25;
+            SpellDurationtxt.Location = new System.Drawing.Point(368, 381);
+            SpellDurationtxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            SpellDurationtxt.Name = "SpellDurationtxt";
+            SpellDurationtxt.Size = new System.Drawing.Size(110, 23);
+            SpellDurationtxt.TabIndex = 25;
             // 
             // Descriptiontxt
             // 
-            this.Descriptiontxt.Location = new System.Drawing.Point(432, 419);
-            this.Descriptiontxt.Multiline = true;
-            this.Descriptiontxt.Name = "Descriptiontxt";
-            this.Descriptiontxt.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.Descriptiontxt.Size = new System.Drawing.Size(303, 196);
-            this.Descriptiontxt.TabIndex = 27;
+            Descriptiontxt.Location = new System.Drawing.Point(368, 456);
+            Descriptiontxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            Descriptiontxt.Multiline = true;
+            Descriptiontxt.Name = "Descriptiontxt";
+            Descriptiontxt.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            Descriptiontxt.Size = new System.Drawing.Size(340, 283);
+            Descriptiontxt.TabIndex = 27;
             // 
             // Class
             // 
-            this.Class.AutoSize = true;
-            this.Class.Location = new System.Drawing.Point(608, 290);
-            this.Class.Name = "Class";
-            this.Class.Size = new System.Drawing.Size(42, 20);
-            this.Class.TabIndex = 28;
-            this.Class.Text = "Class";
+            Class.AutoSize = true;
+            Class.Location = new System.Drawing.Point(520, 301);
+            Class.Name = "Class";
+            Class.Size = new System.Drawing.Size(34, 15);
+            Class.TabIndex = 28;
+            Class.Text = "Class";
             // 
             // label15
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(437, 343);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(54, 20);
-            this.label15.TabIndex = 29;
-            this.label15.Text = "School";
+            label15.AutoSize = true;
+            label15.Location = new System.Drawing.Point(368, 187);
+            label15.Name = "label15";
+            label15.Size = new System.Drawing.Size(43, 15);
+            label15.TabIndex = 29;
+            label15.Text = "School";
             // 
             // label16
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(608, 343);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(43, 20);
-            this.label16.TabIndex = 30;
-            this.label16.Text = "Book";
-            this.label16.Click += new System.EventHandler(this.label16_Click);
+            label16.AutoSize = true;
+            label16.Location = new System.Drawing.Point(520, 364);
+            label16.Name = "label16";
+            label16.Size = new System.Drawing.Size(34, 15);
+            label16.TabIndex = 30;
+            label16.Text = "Book";
             // 
             // Classtxt
             // 
-            this.Classtxt.Location = new System.Drawing.Point(608, 313);
-            this.Classtxt.Name = "Classtxt";
-            this.Classtxt.Size = new System.Drawing.Size(125, 27);
-            this.Classtxt.TabIndex = 31;
+            Classtxt.Location = new System.Drawing.Point(518, 318);
+            Classtxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            Classtxt.Name = "Classtxt";
+            Classtxt.Size = new System.Drawing.Size(110, 23);
+            Classtxt.TabIndex = 31;
             // 
             // Schooltxt
             // 
-            this.Schooltxt.Location = new System.Drawing.Point(437, 366);
-            this.Schooltxt.Name = "Schooltxt";
-            this.Schooltxt.Size = new System.Drawing.Size(125, 27);
-            this.Schooltxt.TabIndex = 32;
+            Schooltxt.Location = new System.Drawing.Point(368, 204);
+            Schooltxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            Schooltxt.Name = "Schooltxt";
+            Schooltxt.Size = new System.Drawing.Size(110, 23);
+            Schooltxt.TabIndex = 32;
             // 
             // Booktxt
             // 
-            this.Booktxt.Location = new System.Drawing.Point(608, 366);
-            this.Booktxt.Name = "Booktxt";
-            this.Booktxt.Size = new System.Drawing.Size(125, 27);
-            this.Booktxt.TabIndex = 33;
+            Booktxt.Location = new System.Drawing.Point(518, 381);
+            Booktxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            Booktxt.Name = "Booktxt";
+            Booktxt.Size = new System.Drawing.Size(110, 23);
+            Booktxt.TabIndex = 33;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 656);
-            this.Controls.Add(this.Booktxt);
-            this.Controls.Add(this.Schooltxt);
-            this.Controls.Add(this.Classtxt);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.Class);
-            this.Controls.Add(this.Descriptiontxt);
-            this.Controls.Add(this.SpellDurationtxt);
-            this.Controls.Add(this.SpellCastTimetxt);
-            this.Controls.Add(this.SpellSavetxt);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.SpellNametxt);
-            this.Controls.Add(this.LevelSearchcbo);
-            this.Controls.Add(this.ClassSearchcbo);
-            this.Controls.Add(this.SchoolSearchcbo);
-            this.Controls.Add(this.NameSearchcbo);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.Spelllst);
-            this.Controls.Add(this.Componentstxt);
-            this.Controls.Add(this.SpellLeveltxt);
-            this.Controls.Add(this.SpellRangetxt);
-            this.Controls.Add(this.AOEtxt);
-            this.Name = "Form1";
-            this.Text = "Dungeons and Dragons Spellbook";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(740, 777);
+            Controls.Add(Booktxt);
+            Controls.Add(Schooltxt);
+            Controls.Add(Classtxt);
+            Controls.Add(label16);
+            Controls.Add(label15);
+            Controls.Add(Class);
+            Controls.Add(Descriptiontxt);
+            Controls.Add(SpellDurationtxt);
+            Controls.Add(SpellCastTimetxt);
+            Controls.Add(SpellSavetxt);
+            Controls.Add(label13);
+            Controls.Add(label12);
+            Controls.Add(label11);
+            Controls.Add(label10);
+            Controls.Add(label9);
+            Controls.Add(SpellNametxt);
+            Controls.Add(LevelSearchcbo);
+            Controls.Add(ClassSearchcbo);
+            Controls.Add(SchoolSearchcbo);
+            Controls.Add(NameSearchcbo);
+            Controls.Add(label8);
+            Controls.Add(label7);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(Spelllst);
+            Controls.Add(Componentstxt);
+            Controls.Add(SpellLeveltxt);
+            Controls.Add(SpellRangetxt);
+            Controls.Add(AOEtxt);
+            Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            Name = "Form1";
+            Text = "Dungeons and Dragons Spellbook";
+            Load += Form1_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

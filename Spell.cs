@@ -26,36 +26,32 @@ namespace DnDSpellbook
 
         public string SpellClass { get; set; }
 
-        public string SpellSchool { get; set; }
+        public List<string> SpellSchool { get; set; }
 
-        public string Book { get; set; }
+        public List<string> Book { get; set; }
 
         public string Description { get; set; }
 
-        public string Reversible { get; set; }
+        public bool Reversible { get; set; }
 
         public Spell() { }
 
-        public Spell(int theSpellId, string theSpellName, int theSpellLevel, string theComponents, string theSpellRange, string theAreadOfEffect, string theSpellSave, string theCastingTime, string theDuration, string theSpellClass, string theSpellSchool, string theBook, string theDescription, string theReversible)
+        public Spell(int theSpellId, string theSpellName, int theSpellLevel, string theComponents, string theSpellRange, string theAreaOfEffect, string theSpellSave, string theCastingTime, string theDuration, string theSpellClass, string theDescription, bool theReversible)
         {
             SpellId = theSpellId;
             SpellName = theSpellName;
             SpellLevel = theSpellLevel;
             Components = theComponents;
             SpellRange = theSpellRange;
-            AreaOfEffect = theAreadOfEffect;
+            AreaOfEffect = theAreaOfEffect;
             SpellSave = theSpellSave;
             CastingTime = theCastingTime;
             Duration = theDuration;
             SpellClass = theSpellClass;
-            SpellSchool = theSpellSchool;
-            Book = theBook;
+            //SpellSchool = theSpellSchool;
+            //Book = theBook;
             Description = theDescription;
             Reversible = theReversible;
-        }
-
-        public Spell(object s)
-        {
         }
 
         public override string ToString()
