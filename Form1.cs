@@ -21,33 +21,42 @@ namespace DnDSpellbook
         List<Spell> currentSpells = new List<Spell>();
         Spell currentSpell = null;
 
+        List<String> schoolList = new List<String>();
+        List<String> classList = new List<String>();
+
         private void Form1_Load(object sender, EventArgs e)
         {
             //Load up the Search boxes
-            SchoolSearchcbo.Items.Add("Abjuration");
-            SchoolSearchcbo.Items.Add("Alteration");
-            SchoolSearchcbo.Items.Add("Conjuration");
-            SchoolSearchcbo.Items.Add("Divination");
-            SchoolSearchcbo.Items.Add("Evocation");
-            SchoolSearchcbo.Items.Add("Illusion");
-            SchoolSearchcbo.Items.Add("Necromancy");
-            SchoolSearchcbo.Items.Add("Enchantment");
 
-            LevelSearchcbo.Items.Add("1");
-            LevelSearchcbo.Items.Add("2");
-            LevelSearchcbo.Items.Add("3");
-            LevelSearchcbo.Items.Add("4");
-            LevelSearchcbo.Items.Add("5");
-            LevelSearchcbo.Items.Add("6");
-            LevelSearchcbo.Items.Add("7");
+            schoolList = SpellDA.GetSchoolsSQL();
 
-            ClassSearchcbo.Items.Add("Priest");
-            ClassSearchcbo.Items.Add("Wizard");
+            foreach(string school in schoolList)
+            {
+                SchoolSearchcbo.Items.Add(school);
+            }
+
+            for (int i = 1; i < 8; i++)
+            {
+                LevelSearchcbo.Items.Add(i);
+            }
+
+            classList = SpellDA.GetClassSQL();
+
+            foreach(string spellClass in classList)
+            {
+                ClassSearchcbo.Items.Add(spellClass);
+            }
 
             //Load up spell lists
             allSpells = new Spells();
 
             currentSpells = allSpells.GetAllSpells();
+
+            foreach(Spell spell in currentSpells)
+            {
+                SpellDA.GetSchoolsListSQL(spell);
+                SpellDA.GetBookListSQL(spell);
+            }
 
             ShowSpells(currentSpells);
 
@@ -74,6 +83,8 @@ namespace DnDSpellbook
 
             if (currentSpell != null)
             {
+                Schooltxt.Clear();
+                Booktxt.Clear();
 
                 SpellNametxt.Text = currentSpell.SpellName;
                 SpellLeveltxt.Text = Convert.ToString(currentSpell.SpellLevel);
@@ -84,8 +95,18 @@ namespace DnDSpellbook
                 SpellCastTimetxt.Text = currentSpell.CastingTime;
                 SpellDurationtxt.Text = currentSpell.Duration;
                 Classtxt.Text = currentSpell.SpellClass;
-                Schooltxt.Text = currentSpell.SpellSchool;
-                Booktxt.Text = currentSpell.Book;
+
+                foreach(string s in currentSpell.SpellSchool)
+                {
+                    Schooltxt.Text += s + Environment.NewLine;
+                }
+
+                foreach(string s in currentSpell.Book)
+                {
+                    Booktxt.Text += s + Environment.NewLine;
+                }
+                //Schooltxt.Text = currentSpell.SpellSchool;
+                //Booktxt.Text = currentSpell.Book;
                 Descriptiontxt.Text = currentSpell.Description;
 
             }

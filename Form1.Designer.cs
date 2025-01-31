@@ -74,7 +74,7 @@ namespace DnDSpellbook
             // 
             // SpellRangetxt
             // 
-            SpellRangetxt.Location = new System.Drawing.Point(368, 255);
+            SpellRangetxt.Location = new System.Drawing.Point(368, 276);
             SpellRangetxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             SpellRangetxt.Name = "SpellRangetxt";
             SpellRangetxt.Size = new System.Drawing.Size(110, 23);
@@ -128,7 +128,7 @@ namespace DnDSpellbook
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new System.Drawing.Point(368, 238);
+            label3.Location = new System.Drawing.Point(368, 255);
             label3.Name = "label3";
             label3.Size = new System.Drawing.Size(40, 15);
             label3.TabIndex = 7;
@@ -347,16 +347,18 @@ namespace DnDSpellbook
             // 
             Schooltxt.Location = new System.Drawing.Point(368, 204);
             Schooltxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            Schooltxt.Multiline = true;
             Schooltxt.Name = "Schooltxt";
-            Schooltxt.Size = new System.Drawing.Size(110, 23);
+            Schooltxt.Size = new System.Drawing.Size(110, 47);
             Schooltxt.TabIndex = 32;
             // 
             // Booktxt
             // 
             Booktxt.Location = new System.Drawing.Point(518, 381);
             Booktxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            Booktxt.Multiline = true;
             Booktxt.Name = "Booktxt";
-            Booktxt.Size = new System.Drawing.Size(110, 23);
+            Booktxt.Size = new System.Drawing.Size(110, 57);
             Booktxt.TabIndex = 33;
             // 
             // Form1

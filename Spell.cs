@@ -48,6 +48,8 @@ namespace DnDSpellbook
             CastingTime = theCastingTime;
             Duration = theDuration;
             SpellClass = theSpellClass;
+            SpellSchool = new List<string>();
+            Book = new List<string>();
             //SpellSchool = theSpellSchool;
             //Book = theBook;
             Description = theDescription;
