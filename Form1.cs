@@ -20,6 +20,7 @@ namespace DnDSpellbook
         Spells allSpells = null;
         List<Spell> currentSpells = new List<Spell>();
         Spell currentSpell = null;
+        Spell updateSpell = null;
 
         List<String> schoolList = new List<String>();
         List<String> classList = new List<String>();
@@ -30,7 +31,7 @@ namespace DnDSpellbook
 
             schoolList = SpellDA.GetSchoolsSQL();
 
-            foreach(string school in schoolList)
+            foreach (string school in schoolList)
             {
                 SchoolSearchcbo.Items.Add(school);
             }
@@ -42,7 +43,7 @@ namespace DnDSpellbook
 
             classList = SpellDA.GetClassSQL();
 
-            foreach(string spellClass in classList)
+            foreach (string spellClass in classList)
             {
                 ClassSearchcbo.Items.Add(spellClass);
             }
@@ -52,7 +53,7 @@ namespace DnDSpellbook
 
             currentSpells = allSpells.GetAllSpells();
 
-            foreach(Spell spell in currentSpells)
+            foreach (Spell spell in currentSpells)
             {
                 SpellDA.GetSchoolsListSQL(spell);
                 SpellDA.GetBookListSQL(spell);
@@ -96,12 +97,12 @@ namespace DnDSpellbook
                 SpellDurationtxt.Text = currentSpell.Duration;
                 Classtxt.Text = currentSpell.SpellClass;
 
-                foreach(string s in currentSpell.SpellSchool)
+                foreach (string s in currentSpell.SpellSchool)
                 {
                     Schooltxt.Text += s + Environment.NewLine;
                 }
 
-                foreach(string s in currentSpell.Book)
+                foreach (string s in currentSpell.Book)
                 {
                     Booktxt.Text += s + Environment.NewLine;
                 }
@@ -123,7 +124,7 @@ namespace DnDSpellbook
             allSpells = new Spells();
             List<Spell> searchSpells = new List<Spell>();
 
-            if (NameSearchcbo.Text != "" )
+            if (NameSearchcbo.Text != "")
             {
                 searchName = NameSearchcbo.Text;
 
@@ -182,6 +183,51 @@ namespace DnDSpellbook
             //searchSpells = searchSpells.FindAll(x => x.SpellLevel.Equals(searchLevel));
 
             ShowSpells(searchSpells);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            updateSpell = (Spell)Spelllst.SelectedItem;
+
+            if (updateSpell != null)
+            {
+
+                updateSpell.SpellName = SpellNametxt.Text;
+                updateSpell.SpellLevel = Convert.ToInt32(SpellLeveltxt.Text);
+                updateSpell.Components = Componentstxt.Text;
+                updateSpell.SpellRange = SpellRangetxt.Text;
+                updateSpell.AreaOfEffect = AOEtxt.Text;
+                updateSpell.SpellSave = SpellSavetxt.Text;
+                updateSpell.CastingTime = SpellCastTimetxt.Text;
+                updateSpell.Duration = SpellDurationtxt.Text;
+                updateSpell.SpellClass = Classtxt.Text;
+
+                if (updateSpell.SpellClass == "Wizard") 
+                {
+                    updateSpell.SpellClass = "1";
+                } else 
+                {
+                    updateSpell.SpellClass = "2";
+                }
+
+                updateSpell.Description = Descriptiontxt.Text;
+
+                updateSpell.Reversible = false;
+
+                //updateSpell.SpellSchool = 
+
+                //foreach (string s in currentSpell.SpellSchool)
+                //{
+                //    Schooltxt.Text += s + Environment.NewLine;
+                //}
+
+                //foreach (string s in currentSpell.Book)
+                //{
+                //    Booktxt.Text += s + Environment.NewLine;
+                //}
+
+                SpellDA.UpdateSpellSQL(updateSpell);
+            }
         }
     }
 }

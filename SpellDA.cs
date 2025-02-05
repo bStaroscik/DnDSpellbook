@@ -267,5 +267,65 @@ namespace DnDSpellbook
                 conn.Close();
             }
         }
+
+        internal static void UpdateSpellSQL(Spell updateSpell)
+        {
+            //need a connection
+            SqlConnection conn = SpellDB.GetConnection();
+
+            // need a sql Statment
+            string updateStatement = "UPDATE Spells Set " +
+                                     "SpellLevel = @SLevel, " +
+                                     "SpellClass = @SClass, " +
+                                     "SpellName = @SName, " +
+                                     "Reversible = @Rever, " +
+                                     "Components = @Comp, " + 
+                                     "SpellRange = @SRange, " +
+                                     "AreaOfEffect = @AOE, " +
+                                     "SpellSave = @SSave, " +
+                                     "CastingTime = @CTime, " +
+                                     "Duration = @duration, " +
+                                     "SpellDescription = @SDescription " +
+                                     "Where SpellID = @SID";
+
+
+            // need a sqlCommand
+            SqlCommand updateCommand = new SqlCommand(updateStatement, conn);
+
+            updateCommand.Parameters.AddWithValue("@SLevel", updateSpell.SpellLevel);
+            updateCommand.Parameters.AddWithValue("@SClass", Convert.ToInt32(updateSpell.SpellClass));
+            updateCommand.Parameters.AddWithValue("@SName", updateSpell.SpellName);
+            updateCommand.Parameters.AddWithValue("@Rever", updateSpell.Reversible);
+            updateCommand.Parameters.AddWithValue("@Comp", updateSpell.Components);
+            updateCommand.Parameters.AddWithValue("@SRange", updateSpell.SpellRange);
+            updateCommand.Parameters.AddWithValue("@AOE", updateSpell.AreaOfEffect);
+            updateCommand.Parameters.AddWithValue("@SSave", updateSpell.SpellSave);
+            updateCommand.Parameters.AddWithValue("@CTime", updateSpell.CastingTime);
+            updateCommand.Parameters.AddWithValue("@duration", updateSpell.Duration);
+            updateCommand.Parameters.AddWithValue("@SDescription", updateSpell.Description);
+            updateCommand.Parameters.AddWithValue("@SID", updateSpell.SpellId);
+
+            try
+            {
+                //open the database
+                conn.Open();
+                //execute the command
+                SqlDataReader reader = updateCommand.ExecuteReader();
+
+
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
     }
 }

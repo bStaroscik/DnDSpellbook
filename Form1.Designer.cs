@@ -62,6 +62,7 @@ namespace DnDSpellbook
             Classtxt = new System.Windows.Forms.TextBox();
             Schooltxt = new System.Windows.Forms.TextBox();
             Booktxt = new System.Windows.Forms.TextBox();
+            btnUpdate = new System.Windows.Forms.Button();
             SuspendLayout();
             // 
             // AOEtxt
@@ -361,11 +362,22 @@ namespace DnDSpellbook
             Booktxt.Size = new System.Drawing.Size(110, 57);
             Booktxt.TabIndex = 33;
             // 
+            // btnUpdate
+            // 
+            btnUpdate.Location = new System.Drawing.Point(653, 99);
+            btnUpdate.Name = "btnUpdate";
+            btnUpdate.Size = new System.Drawing.Size(75, 23);
+            btnUpdate.TabIndex = 34;
+            btnUpdate.Text = "Update";
+            btnUpdate.UseVisualStyleBackColor = true;
+            btnUpdate.Click += button1_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             ClientSize = new System.Drawing.Size(740, 777);
+            Controls.Add(btnUpdate);
             Controls.Add(Booktxt);
             Controls.Add(Schooltxt);
             Controls.Add(Classtxt);
@@ -442,6 +454,7 @@ namespace DnDSpellbook
         private System.Windows.Forms.TextBox Classtxt;
         private System.Windows.Forms.TextBox Schooltxt;
         private System.Windows.Forms.TextBox Booktxt;
+        private System.Windows.Forms.Button btnUpdate;
     }
 }
 
